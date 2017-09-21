@@ -19,11 +19,6 @@
     z-index: 2;
 }
 
-.page-header {
-    padding-bottom: 9px;
-    margin: 120px 0 20px !important;
-    border-bottom: 1px solid #eee;
-}
 
 .w100 {
     width: 100%;
@@ -32,12 +27,19 @@
     padding: 0;
 }
 
+.linkRosa {
+    color: $rosa !important;
+}
+
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-text {
     color: white;
-    line-height: 45px;
+    line-height: 46px;
+    font-size: 12px;
+
     text-align: center;
     transition: color 1s;
+    letter-spacing: 1px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -59,7 +61,7 @@
 }
 
 .navbar-toggle span {
-    transition: color 1s;
+    transition: all 1s;
 }
 
 .navbar-toggle:hover,
@@ -94,24 +96,16 @@
 
 
 
-@media screen and (max-width: 768px) {
-    .topBar a {
-        display: none;
-    }
-    .desktop,
-    .divider,
-    .blankSpace {
-        display: none !important;
-    }
-    .topBar {
-        padding: 0 20px;
-    }
+@media screen and (max-width: 990px) {
     .logoMobile {
         position: relative;
         display: block;
         float: left;
         margin-left: 15px;
         padding: 9px 10px;
+    }
+    .desktop {
+        display: none !important;
     }
     .container>.navbar-collapse,
     .container>.navbar-header {
@@ -125,11 +119,10 @@
         line-height: 30px;
     }
     .navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-text {
-    color: white;
-    line-height: 25px;
-    text-align: center;
-    transition: color 1s;
-}
-
+    .navbar-default .navbar-text {
+        color: white;
+        line-height: 25px;
+        text-align: center;
+        transition: color 1s;
+    }
 }
