@@ -21,7 +21,9 @@
     color: white;
     margin-bottom: 0px;
 }
-
+#agradecimientos .col-md-12{
+    padding: 0px;
+}
 #inicio h2,
 #ayudar h2 {
     font-size: 18px;
@@ -43,12 +45,14 @@ span {
 
 #ayudar p {
     color: white;
+    font-size: 18px;
 }
 
 #ayudar h2 {
     letter-spacing: 0px !important;
     font-weight: 500;
     margin-bottom: 40px;
+    font-size: 25px;
 }
 
 #ayudar a {
@@ -93,7 +97,7 @@ span {
 }
 
 #recibir .btn {
-    margin: 50px 0px;
+    margin: 30px 0px;
     padding: 10px 20px;
     background-color: #222423;
     color: $rosa;
