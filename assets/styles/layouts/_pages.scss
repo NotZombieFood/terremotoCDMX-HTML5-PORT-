@@ -36,7 +36,7 @@
     padding: 50px 100px;
     text-align: center;
 }
-
+.magicPadding{padding: 0 100px;}
 span {
     color: $rosa;
 }
@@ -212,7 +212,7 @@ span {
     margin-bottom: 40px;
 }
 
-#faq li {
+#faq li, #dar li {
     font-size: 16px;
     line-height: 35px;
 }
@@ -229,12 +229,12 @@ span {
     font-size: 20px;
 }
 
-#agradecimientos a,#faq a {
+#agradecimientos a,#faq a, #dar a {
     color: $rosa;
     transition: color 1s;
 }
 
-#agradecimientos a:hover,#faq a:hover {
+#agradecimientos a:hover,#faq a:hover, #dar a:hover {
     color: darken($rosa, 20%);
     text-decoration: none;
 }
@@ -246,7 +246,11 @@ span {
     letter-spacing: 1px;
     padding: 0 0;
 }
-
+#donativosEspecie li{
+	display: block;
+    width: 50%;
+    float: left;
+}
 #agradecimientos li {
     display: block;
     width: 25%;
@@ -262,25 +266,39 @@ span {
     font-size: 15px !important;
     line-height: 25px;
 }
-
+#dar .col-lg-6,#dar .col-md-6{
+	padding: 0 0 !important;
+}
 .descanso {
     width: 100%;
     height: 60px;
     background-color: $rosa;
 }
-
-
+#dar p{
+	margin-bottom: 20px;
+}
+#dar h2{
+	margin-bottom: 30px;
+}
 #faq,#dar  {
     background-color: #F2F2F2;
     padding: 50px 100px;
 }
-
-#faq li:before {
+#dar ul{
+	list-style-type: none;
+	padding: 0 0;
+}
+#faq li:before, #dar li:before {
     content: "+";
     padding-right: 8px;
     color: #222423;
 }
-
+#donativosEspecie h3{
+	margin: 10px 0px;
+}
+#donativosEspecie p{
+	margin-bottom: 2px;
+}
 @media screen and (max-width: 768px) {
     #ayudar,#dar,#agradecimientos,#faq {
         padding: 30px;
@@ -302,10 +320,14 @@ h2{font-size: 25px !important;}
     font-size: 20px;
     margin: 20px 0px;
 }
+#donativosEspecie li{font-size: 13px;}
+#donativosEspecie p {margin-bottom: 4px !important;}
 #agradecimientos p {
     font-size: 15px;
 }
 .boxRedes{
 	position:relative;
 }
+.magicPadding{padding: 0 30px;}
+
 }
