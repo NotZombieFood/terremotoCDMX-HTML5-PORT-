@@ -50,3 +50,12 @@ function changeMap(){
 		jQuery.globalEval( "var state = 0;" );
 	}
 }
+
+    $('#mapa').click(function () {
+        $('#mapa iframe').css("pointer-events", "auto");
+    });
+    
+    $( "#mapa" ).mouseleave(function() {
+      $('#mapa iframe').css("pointer-events", "none"); 
+    });
+                

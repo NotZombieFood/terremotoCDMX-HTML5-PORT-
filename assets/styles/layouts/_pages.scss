@@ -299,6 +299,9 @@ span {
 #donativosEspecie p{
 	margin-bottom: 2px;
 }
+#mapa iframe{
+    pointer-events: none;
+}
 @media screen and (max-width: 768px) {
     #ayudar,#dar,#agradecimientos,#faq {
         padding: 30px;
