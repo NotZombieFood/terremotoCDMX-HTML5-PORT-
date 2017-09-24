@@ -71,3 +71,22 @@ function changeMap(){
     });
   
 });
+
+$(document).ready(function(){
+   $("#search").on("submit", function(){
+        var nombre = $('#nombre').val();    
+        $.ajax({
+            type:"GET",
+            url:"http://basiko.cloudapp.net:8082/PERSONA",
+            crossDomain: true,
+            data:{"nombre": nombre},
+            success: function(status,result,xhr){
+                $("#resultado").html(status);
+            },
+            failure: function(result){
+              console.log(result);
+            }
+        }); return false;
+      });
+
+});
